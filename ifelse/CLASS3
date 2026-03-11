@@ -1,0 +1,848 @@
+
+control statement
+____________________
+
+sequentional control statement
+_______________________________
+
+class Test
+{
+	 public static void main(String arg[])
+	 {
+	     System.out.println("A");
+	     System.out.println("B");
+	     System.out.println("C");
+	 }
+}
+
+o/p:
+A
+B
+C
+
+all previeous program this type
+
+
+condtional control statement
+____________________________
+if
+if else
+else if
+
+selection control statement
+_____________________________
+switch
+
+
+looping control satement
+_________________________
+while
+do while
+for
+
+
+
+jumping control statment
+__________________________
+break
+continue
+return 
+exit()
+
+
+
+if  statemnt
+_________________
+
+
+if(condtion)
+{
+	  
+	  true block;
+
+}
+
+condtion must be bollean type  
+
+
+class Test
+{
+	 public static void main(String arg[])
+	 {
+	      if(true)
+	      {
+	          System.out.println("A");
+	      }
+	      System.out.println("B");
+	 }
+}
+
+o/p:
+A
+B
+
+class Test
+{
+	 public static void main(String arg[])
+	 {
+	      if(false)
+	      {
+	          System.out.println("A");
+	      }
+	      System.out.println("B");
+	 }
+}
+
+o/p:
+B
+
+class Test
+{
+	 public static void main(String arg[])
+	 {
+	      if(1)
+	      {
+	          System.out.println("A");
+	      }
+	      System.out.println("B");
+	 }
+}
+
+o/p:
+error  int can not convert to boolean
+
+class Test
+{
+	 public static void main(String arg[])
+	 {
+	     int a=5;
+	      if(a>4)
+	      {
+	          a=10;
+	      }
+	      System.out.println(a);
+	 }
+}
+
+o/p:
+10
+
+class Test
+{
+	 public static void main(String arg[])
+	 {
+	     int a=5;
+	      if(a<4)
+	      {
+	          a=10;
+	      }
+	      System.out.println(a);
+	 }
+}
+
+o/p:
+5
+
+//wap take a number from keyboad check no is +ve
+
+import java.util.Scanner;
+class Test
+{
+	public static void main(String arg[])
+	{
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("enter a number ");
+	    int no=sc.nextInt();
+	    if(no>=0)
+	    {
+	       System.out.println("+Ve");
+	     }
+	}
+}
+
+
+
+
+
+//wap take a number from keyboad check no is -ve
+
+import java.util.Scanner;
+class Test
+{
+	public static void main(String arg[])
+	{
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("enter a number ");
+	    int no=sc.nextInt();
+	    if(no<0)
+	    {
+	       System.out.println("-Ve");
+	     }
+	}
+}
+
+
+
+//wap take a number from keyboad convert -ve to +ve
+
+import java.util.Scanner;
+class Test
+{
+	public static void main(String arg[])
+	{
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("enter a number ");
+	    int no=sc.nextInt();
+	    if(no<0)
+	    {
+	       no=-no;
+	     }
+	     System.out.println(no);
+	}
+}
+
+//wap take a number from keyboadcheck no is zero
+
+import java.util.Scanner;
+class Test
+{
+	public static void main(String arg[])
+	{
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("enter a number ");
+	    int no=sc.nextInt();
+	    if(no==0)
+	    {
+	      
+	     System.out.println("zero");
+	     }
+	}
+}
+
+
+//check no is even no
+import java.util.Scanner;
+class Test
+{
+	public static void main(String arg[])
+	{
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("enter a number ");
+	    int no=sc.nextInt();
+	    if(no%2==0)
+	    {
+	      
+	     System.out.println("even no");
+	     }
+	}
+}
+//check no is odd no
+import java.util.Scanner;
+class Test
+{
+	public static void main(String arg[])
+	{
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("enter a number ");
+	    int no=sc.nextInt();
+	    if(no%2!=0)
+	    {
+	      
+	     System.out.println("odd no");
+	     }
+	}
+}
+//take two no check both nos are same
+import java.util.Scanner;
+class Test
+{
+	public static void main(String arg[])
+	{
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("enter a number ");
+	    int no1=sc.nextInt();
+	    System.out.println("enter another number ");
+	    int no2=sc.nextInt();
+	    if(no1==o2)
+	    {
+	      
+	     System.out.println("both nos same");
+	     }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+//wap take a number form keyboad check no is even 
+import java.util.Scanner;
+class Test
+{
+    public static void main(String arg[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter a number ");
+        int no=sc.nextInt();
+        if(no%2==0)
+        {
+              System.out.println("even no");
+        }
+    }
+}
+
+o/p:
+enter a number
+6
+even no
+
+o/p:
+enter a number
+7
+
+
+
+//wap take a number form keyboad check no is odd no 
+import java.util.Scanner;
+class Test
+{
+    public static void main(String arg[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter a number ");
+        int no=sc.nextInt();
+        if(no%2!=0)
+        {
+              System.out.println("odd no");
+        }
+    }
+}
+
+o/p:
+enter a number
+7
+odd no
+
+o/p:
+enter a number
+6
+
+
+//wap take two no from keyboad check both nos are same
+
+import java.util.Scanner;
+class Test
+{
+    public static void main(String arg[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter two numbers ");
+        int no1=sc.nextInt();
+        int no2=sc.nextInt();
+        if(no1==no2)
+        {
+              System.out.println("both nos same");
+        }
+    }
+}
+
+//wap take emp salary from keyboad if sal>=5000 da=30% hra=20%  then display basic sal ,da ,hra  totalsal.
+
+import java.util.Scanner;
+class Test
+{
+     public static void main(String arg[])
+     {
+         Scanner sc=new Scanner(System.in);
+         System.out.println("enter a salary ");
+         double sal=sc.nextDouble();
+         double da=0,hra=0,total;
+         if(sal>=5000)
+         {
+               da=sal*0.3;
+               hra=sal*0.2;
+         }
+         total=sal+da+hra;
+         System.out.println("basic sal="+sal);
+         System.out.println("da="+da);
+         System.out.println("hra="+hra);
+         System.out.println("total="+total);
+
+     }
+}
+
+
+
+
+o/p:
+C:\Users\DELL\Desktop>java Test
+enter a salary
+4000
+basic sal=4000.0
+da=0.0
+hra=0.0
+total=4000.0
+
+C:\Users\DELL\Desktop>java Test
+enter a salary
+6000
+basic sal=6000.0
+da=1800.0
+hra=1200.0
+total=9000.0
+
+
+
+//wap take person age from keyboad check person eligbal voteing
+import java.util.Scanner;
+class Vote
+{
+	public static void main(String arg[])
+	{
+	    Scanner sc= new Scanner(System.in);
+	    System.out.println("enter age");
+	    int age= sc.nextInt();
+	    if(age>=18)
+	    {
+	    System.out.println("the person in eligible to vote");
+	    }
+	}
+}
+
+//wap take emp salary from keyboard if sal>=5000  da=20% hra=30% then display basic sal da and totalsal
+import java.util.Scanner;
+class Salary
+{
+	public static void main(String arg[])
+	{
+	  Scanner sc= new Scanner(System.in);
+	  System.out.println("enter salary")
+	  double sal= sc.nextDouble();
+	  double da=0;
+	  double hr=0;
+	  if(sal>=5000)
+	  {
+	    da=sal*0.2;
+	    hr=sal*0.3;
+
+          }
+	  double total=sal+da+hr;
+	  System.out.println("the basic salary="+sal);
+	  System.out.println("the da salary="+da);
+         System.out.println("the hr salary="+hr);
+
+
+	System.out.println("the total salary="+total);
+
+	
+	}
+}
+
+
+logical or short  circut operator
+___________________________________
+
+combine two relation operator 
+
+||     logical or
+
+&&    logical and
+
+!
+
+
+
+
+||
+op1    op2      resulet
+true   true     true
+true   false     true
+false  true      true
+false  false       false
+
+if first operand is true  second operand not checking.
+if first operand is false  second operand must checking.
+
+sop(true || false);    //true
+
+sop(3 || 5);    // error    in python 3     in c 1
+
+sop(3>2 || 5>7);    // true
+
+sop(3<2  ||  5>7);   //false
+
+sop(3<2  ||  5<7);   true
+
+
+class Test
+{
+    public static void main(String arg[])
+    {
+       int a=3,b=5;
+       System.out.println(++a>2 || ++b>2); //
+       System.out.println(a+" "+b);
+    }
+}
+
+o/p:
+true
+4 5
+
+
+
+
+class Test
+{
+    public static void main(String arg[])
+    {
+       int a=3,b=5;
+       System.out.println(++a<2 || ++b>2); 
+       System.out.println(a+" "+b);
+    }
+}
+
+o/p:
+true
+4 6
+
+
+
+
+&&
+op1    op2      resulet
+true   true     true
+true   false     false
+false  true      false
+false  false       false
+
+if first operand is true  second operand must checking.
+if first operand is false  second operand not checking.
+
+sop(true && false);    //false
+
+sop(3 && 5);    // error  
+
+sop(3>2 && 5>7);    // false
+
+sop(3<2  &&  5>7);   //false
+
+sop(3<2  &&  5<7);   //false
+sop(3>2 &&  5<7); //true
+
+
+class Test
+{
+    public static void main(String arg[])
+    {
+       int a=3,b=5;
+       System.out.println(++a>2 && ++b>2); //
+       System.out.println(a+" "+b);
+    }
+}
+
+o/p:
+true
+4 6
+
+
+
+
+class Test
+{
+    public static void main(String arg[])
+    {
+       int a=3,b=5;
+       System.out.println(++a>2 && ++b<2); 
+       System.out.println(a+" "+b);
+    }
+}
+
+o/p:
+false
+4 6
+
+
+!
+____
+
+
+operand  resulet
+
+true      false
+false      true
+
+sop(!(3>2));  False
+
+
+
+
+
+multiple if
+_________________
+A program contain more than one if . every if condtion must checking
+
+class Test
+{
+    public static void main(String arg[])
+    {
+       int a=5;
+       if(a>4)
+       {
+          System.out.println("hi");
+       }
+       if(a<4)
+       {
+          System.out.println("bye");
+       }
+       if(a!=4)
+       {
+          System.out.println("ok");
+       }
+    }
+}
+
+o/p:
+hi
+ok
+
+//wap take a no from keyboad check no is 0 +ve -ve using multiple if
+
+import java.util.Scanner;
+class Test
+{
+    public static void main(String arg[])
+    {
+         Scanner sc=new Scanner(System.in);
+         System.out.println("enter a number ");
+         int no=sc.nextInt();
+         if(no==0)
+         {
+            System.out.println("zero");
+         }
+         if(no>0)
+         {
+            System.out.println("+ve");
+         }
+         if(no<0)
+         {
+            System.out.println("-ve");
+         }
+    }
+}
+
+import java.util.Scanner;
+class check
+{
+	public static void main (string arg[])
+	{
+	   Scanner sc = new Scanner(System.in);
+	   System.out.println("enter a number");
+	   int num1=sc.nextInt();
+	   System.out.println("enter another number");
+	   int num2=sc.nextInt();
+	   if(num1==num2)
+	      System.out.println("both same");
+	   if(num1>num2)
+	          System.out.println("1st>2nd");
+	   if(num1<num2)
+	          System.out.println("2nd>1st");       
+
+	}
+}
+
+
+
+o/p:
+enter two nos
+5
+5
+both same
+
+
+o/p:
+enter two nos
+5
+4
+1st>2nd
+o/p:
+enter two nos
+4
+5
+2nd>1st
+
+
+
+
+nested if 
+___________
+
+if(condtion1)
+{
+    
+    if(condtion2)
+    {
+          job execute;
+    }
+}
+
+
+nested if and mult if differnet
+
+//wap take a number from keyboad check no is  2 digit number using nested if
+
+import java.util.Scanner;
+class Test
+{
+    public static void main(String arg[])
+    {
+
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter a number ");
+        int no=sc.nextInt();
+        if(no>9)
+        {
+             if(no<100)
+             {
+                 System.out.println("2 digit number ");
+             }
+        }
+    }
+}
+
+
+nested if convert to single if  using  && operator
+
+
+//wap take a number from keyboad check no is  2 digit number using nested if
+
+import java.util.Scanner;
+class Test
+{
+    public static void main(String arg[])
+    {
+
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter a number ");
+        int no=sc.nextInt();
+        if(no>9 &&no<100)
+             {
+                 System.out.println("2 digit number ");
+             }
+        
+    }
+}
+
+
+
+
+
+
+//wap take a number from keyboad check no is  2 digit number using nested if
+
+import java.util.Scanner;
+class Test
+{
+    public static void main(String arg[])
+    {
+
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter a number ");
+        int no=sc.nextInt();
+        //convert -ve to +ve
+        if(no<0)
+        {
+            no=-no;
+        }
+        //check 2 digit no
+        if(no>9 &&no<100)
+             {
+                 System.out.println("2 digit number ");
+             }
+        
+    }
+}
+
+
+
+
+'A'  65
+'B'  66
+
+'Z'   90
+
+
+'a'   97
+'b'   98
+
+'z'   122
+
+
+'0'   48
+
+//wap take char from keyboad check char is upper case
+import java.util.Scanner;
+class Test
+{
+    public static void main(String arg[])
+    {
+
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter a char ");
+        char ch=sc.next().charAt(0);
+        if(ch>='A')
+        {
+            if(ch<='Z')
+            {
+                System.out.println("upper case");
+            }
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+or
+
+
+
+
+//wap take char from keyboad check char is upper case
+import java.util.Scanner;
+class Test
+{
+    public static void main(String arg[])
+    {
+
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter a char ");
+        char ch=sc.next().charAt(0);
+        if(ch>='A' &&ch<='Z')
+            {
+                System.out.println("upper case");
+            }  
+    }
+}
+class Test
+{
+    public static void main(String arg[])
+    {
+
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter a number");
+        int num=sc.nextInt();
+        if(num==1 || num==0)
+           System.out.println("hi");
+       else
+          System.out.println("bye");  
+     }
+ }
