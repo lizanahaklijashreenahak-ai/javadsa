@@ -1,3 +1,4 @@
+
 operator :
 operator is a symbole that operate the operand .
 operand may be variable constant and expression.
@@ -497,5 +498,136 @@ true<30     error
 true==true
 
 true
+logical or short  circut operator
+___________________________________
+
+combine two relation operator 
+
+||     logical or
+
+&&    logical and
+
+!
+
+
+
+
+||
+op1    op2      resulet
+true   true     true
+true   false     true
+false  true      true
+false  false       false
+
+if first operand is true  second operand not checking.
+if first operand is false  second operand must checking.
+
+sop(true || false);    //true
+
+sop(3 || 5);    // error  
+
+sop(3>2 || 5>7);    // true
+
+sop(3<2  ||  5>7);   //false
+
+sop(3<2  ||  5<7);   true
+
+
+class Test
+{
+    public static void main(String arg[])
+    {
+       int a=3,b=5;
+       System.out.println(++a>2 || ++b>2); //
+       System.out.println(a+" "+b);
+    }
+}
+
+o/p:
+true
+4 5
+
+
+
+
+class Test
+{
+    public static void main(String arg[])
+    {
+       int a=3,b=5;
+       System.out.println(++a<2 || ++b>2); 
+       System.out.println(a+" "+b);
+    }
+}
+
+o/p:
+true
+4 6
+
+
+
+
+&&
+op1    op2      resulet
+true   true     true
+true   false     false
+false  true      false
+false  false       false
+
+if first operand is true  second operand must checking.
+if first operand is false  second operand not checking.
+
+sop(true && false);    //false
+
+sop(3 && 5);    // error  
+
+sop(3>2 && 5>7);    // false
+
+sop(3<2  &&  5>7);   //false
+
+sop(3<2  &&  5<7);   //false
+sop(3>2 &&  5<7); //true
+
+
+class Test
+{
+    public static void main(String arg[])
+    {
+       int a=3,b=5;
+       System.out.println(++a>2 && ++b>2); //
+       System.out.println(a+" "+b);
+    }
+}
+
+o/p:
+true
+4 6
+
+
+
+
+class Test
+{
+    public static void main(String arg[])
+    {
+       int a=3,b=5;
+       System.out.println(++a>2 && ++b<2); 
+       System.out.println(a+" "+b);
+    }
+}
+
+o/p:
+false
+4 6
+
+
+!
+____
+
+
+operand  resulet
+
+true      false
+false      true
 
 

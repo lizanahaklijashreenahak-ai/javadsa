@@ -1,14 +1,15 @@
 import java.util.Scanner;
-class one
+class five
 {
 	public static void main(String arg[])
 	{
 	    Scanner sc=new Scanner(System.in);
 	    System.out.println("enter a number ");
 	    int no=sc.nextInt();
-	    if(no>=0)
+	    if(no%2!=0)
 	    {
-	       System.out.println("+Ve");
+	      
+	     System.out.println("odd no");
 	     }
 	}
 }
